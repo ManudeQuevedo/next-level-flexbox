@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   background: #edf2f4;
+   color: #2b2d42;
+   font-family: 'Montserrat', sans-serif;
+   margin: 0;
+   text-align: center;
+}
+
+h1 {
+   font-weight: 800;
+}
+
+h2 {
+   font-weight: 200;
+}
+
+.title {
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+.subtitle {
+   text-align: left;
+}
+
+.container {
+   max-width: 600px;
+   margin: 5em auto;
+}
+
+.flex-container {
+   border: 10px solid #ef233c;
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 0.25em;
+}
+
+.two {
+   display: flex;
+}
+
+.three {
+   display: flex;
+   flex-direction: column;
+}
+
+.flex-item {
+   background: #8bee86;
+   color: #424656;
+   font-family: 'Cutive Mono', monospace;
+   margin: 0.5em;
+   padding: 0.5em;
+   text-transform: capitalize;
+}
