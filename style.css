@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
 * {
@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-   font-weight: 200;
+   font-weight: 600;
 }
 
 .title {
@@ -31,15 +31,21 @@ h2 {
 }
 
 .container {
-   max-width: 600px;
    margin: 5em auto;
+   max-width: 825px;
+   width: 90%;
+}
+
+.container > p {
+   text-align: left;
 }
 
 .flex-container {
    border: 10px solid #ef233c;
-   max-width: 600px;
    margin: 0 auto;
+   max-width: 825px;
    padding: 0.25em;
+   width: 100%;
 }
 
 .two {
@@ -51,11 +57,66 @@ h2 {
    flex-direction: column;
 }
 
+.four {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+}
+
+.five {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.six {
+   display: flex;
+   flex-flow: row wrap;
+}
+
+.seven {
+   display: flex;
+   justify-content: flex-start;
+}
+
+.eight {
+   display: flex;
+   justify-content: center;
+}
+
+.nine {
+   display: flex;
+   height: 200px;
+   justify-content: center;
+   align-items: center;
+}
+
+.ten {
+   align-content: center;
+   display: flex;
+   flex-wrap: wrap;
+   height: 200px;
+   justify-content: center;
+}
+
 .flex-item {
-   background: #8bee86;
-   color: #424656;
+   background: #2b2d42;
+   color: #fff;
    font-family: 'Cutive Mono', monospace;
    margin: 0.5em;
+   min-width: 135px;
    padding: 0.5em;
    text-transform: capitalize;
+}
+
+.flex-item-1 {
+   background-color: #ef233c;
+   color: #fff;
+   flex-grow: 1;
+}
+
+.flex-item-2 {
+   background-color: #1982c4;
+   color: #fff;
+   flex-grow: 2;
 }
